@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
+import { CalpirModulesGrid } from "@/components/CalpirModulesGrid";
 import { FounderManifesto } from "@/components/FounderManifesto";
 import { IndustrySolutions } from "@/components/IndustrySolutions";
 import { RevenueCalculator } from "@/components/RevenueCalculator";
 import { GrowthEngine } from "@/components/GrowthEngine";
 import { ComparisonSection } from "@/components/ComparisonSection";
 import { AuditBookingModal } from "@/components/AuditBookingModal";
+import { FloatingChatWidget } from "@/components/FloatingChatWidget";
 import { Footer } from "@/components/Footer";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 
@@ -29,15 +31,18 @@ const Index: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 selection:bg-amber-500 selection:text-slate-950 font-sans">
+    <div className="min-h-screen bg-white text-slate-900 selection:bg-amber-400 selection:text-slate-950 font-sans">
       {/* Navigation */}
       <Navbar onOpenAudit={() => handleOpenAudit()} />
 
-      {/* Hero Section */}
+      {/* Recreated Calpir Hero Section (White background, stacked typography, mono text, dual buttons) */}
       <HeroSection
         onOpenAudit={() => handleOpenAudit()}
         onExploreSolutions={scrollToSolutions}
       />
+
+      {/* Recreated Calpir 3x2 Module Cards Grid (White bg, bold titles, mono descriptors, explore links) */}
+      <CalpirModulesGrid />
 
       {/* Founder Manifesto (Andy's vision & Cruzian heritage) */}
       <FounderManifesto />
@@ -62,7 +67,7 @@ const Index: React.FC = () => {
       <Footer />
 
       {/* Made with Dyad attribution */}
-      <div className="bg-slate-950 border-t border-slate-900">
+      <div className="bg-[#0B1B3D] border-t border-slate-900 text-slate-400">
         <MadeWithDyad />
       </div>
 
@@ -72,6 +77,9 @@ const Index: React.FC = () => {
         onClose={() => setIsAuditOpen(false)}
         preselectedIndustry={selectedIndustry}
       />
+
+      {/* Floating Bottom Right 'We Are Here!' Chat Widget */}
+      <FloatingChatWidget onOpenAudit={() => handleOpenAudit()} />
     </div>
   );
 };
