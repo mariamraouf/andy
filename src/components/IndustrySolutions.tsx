@@ -90,7 +90,7 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
   const current = industries.find((i) => i.id === activeTab) || industries[0];
 
   return (
-    <section id="solutions" className="py-20 bg-[#07090E] text-white relative">
+    <section id="solutions" className="py-20 bg-[#030712] text-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -121,7 +121,7 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
                 className={`flex items-center gap-2 px-5 py-3 rounded-xl font-medium text-sm whitespace-nowrap transition-all ${
                   isActive
                     ? "bg-cyan-500 text-slate-950 font-bold shadow-lg shadow-cyan-500/20"
-                    : "bg-[#0B0F17] text-slate-300 hover:text-white border border-white/5"
+                    : "bg-[#07090E] text-slate-300 hover:text-white border border-white/5"
                 }`}
               >
                 <Icon className={`w-4 h-4 ${isActive ? "text-slate-950" : "text-cyan-400"}`} />
@@ -181,7 +181,7 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
                   <ArrowRight className="w-4 h-4" />
                 </Button>
 
-                <div className="text-xs text-slate-400 flex items-center gap-2 px-3 py-2 bg-[#07090E] rounded-lg border border-white/5">
+                <div className="text-xs text-slate-400 flex items-center gap-2 px-3 py-2 bg-[#030712] rounded-lg border border-white/5">
                   <Shield className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>Custom Campaign Setup included in 30-day plan</span>
                 </div>
@@ -190,7 +190,7 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
             </div>
 
             {/* Right Interactive Blueprint Box */}
-            <div className="lg:col-span-5 bg-[#07090E] rounded-2xl p-6 border border-white/10 space-y-4">
+            <div className="lg:col-span-5 bg-[#030712] rounded-2xl p-6 border border-white/10 space-y-4">
               
               <div className="flex items-center justify-between border-b border-white/10 pb-3">
                 <span className="text-xs font-mono font-bold text-cyan-400 uppercase">

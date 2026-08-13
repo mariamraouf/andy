@@ -31,7 +31,7 @@ export const ComparisonSection: React.FC = () => {
   ];
 
   return (
-    <section id="comparison" className="py-20 bg-[#0B0F17] text-white relative border-t border-white/10">
+    <section id="comparison" className="py-20 bg-[#07090E] text-white relative border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -50,7 +50,7 @@ export const ComparisonSection: React.FC = () => {
 
         {/* Comparison Table Card */}
         <div className="mt-12 glass-panel rounded-3xl overflow-hidden shadow-2xl">
-          <div className="grid grid-cols-12 bg-[#07090E] p-4 sm:p-6 border-b border-white/10 text-xs sm:text-sm font-bold uppercase tracking-wider">
+          <div className="grid grid-cols-12 bg-[#030712] p-4 sm:p-6 border-b border-white/10 text-xs sm:text-sm font-bold uppercase tracking-wider">
             <div className="col-span-4 sm:col-span-4 text-slate-400 font-mono">Core Capability</div>
             <div className="col-span-4 sm:col-span-4 text-cyan-400 font-mono flex items-center gap-1.5">
               <ShieldCheck className="w-4 h-4 text-cyan-400" />

@@ -18,7 +18,7 @@ export const RevenueCalculator: React.FC<CalculatorProps> = ({ onOpenAudit }) =>
   const requiredLeadsEstimated = additionalClientsNeeded * 12;
 
   return (
-    <section id="calculator" className="py-20 bg-[#0B0F17] text-white relative border-t border-white/10">
+    <section id="calculator" className="py-20 bg-[#07090E] text-white relative border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Title */}
@@ -45,7 +45,7 @@ export const RevenueCalculator: React.FC<CalculatorProps> = ({ onOpenAudit }) =>
             <div className="space-y-3">
               <div className="flex justify-between items-center text-sm">
                 <label className="font-semibold text-slate-200">Current Monthly Revenue:</label>
-                <span className="font-mono text-cyan-400 text-lg font-bold bg-[#07090E] px-3 py-1 rounded-lg border border-white/10">
+                <span className="font-mono text-cyan-400 text-lg font-bold bg-[#030712] px-3 py-1 rounded-lg border border-white/10">
                   ${currentRevenue.toLocaleString()}
                 </span>
               </div>
@@ -69,7 +69,7 @@ export const RevenueCalculator: React.FC<CalculatorProps> = ({ onOpenAudit }) =>
             <div className="space-y-3">
               <div className="flex justify-between items-center text-sm">
                 <label className="font-semibold text-slate-200">Average Client / Job Value:</label>
-                <span className="font-mono text-cyan-400 text-lg font-bold bg-[#07090E] px-3 py-1 rounded-lg border border-white/10">
+                <span className="font-mono text-cyan-400 text-lg font-bold bg-[#030712] px-3 py-1 rounded-lg border border-white/10">
                   ${avgCustomerValue.toLocaleString()}
                 </span>
               </div>
@@ -93,7 +93,7 @@ export const RevenueCalculator: React.FC<CalculatorProps> = ({ onOpenAudit }) =>
             <div className="space-y-3">
               <div className="flex justify-between items-center text-sm">
                 <label className="font-semibold text-slate-200">Desired Target Growth:</label>
-                <span className="font-mono text-indigo-400 text-lg font-bold bg-[#07090E] px-3 py-1 rounded-lg border border-white/10">
+                <span className="font-mono text-indigo-400 text-lg font-bold bg-[#030712] px-3 py-1 rounded-lg border border-white/10">
                   +{targetGrowth}% Growth
                 </span>
               </div>
@@ -121,7 +121,7 @@ export const RevenueCalculator: React.FC<CalculatorProps> = ({ onOpenAudit }) =>
           </div>
 
           {/* Results Summary Box */}
-          <div className="lg:col-span-5 bg-[#07090E] rounded-2xl border border-white/10 p-6 sm:p-8 space-y-6 shadow-xl relative">
+          <div className="lg:col-span-5 bg-[#030712] rounded-2xl border border-white/10 p-6 sm:p-8 space-y-6 shadow-xl relative">
             
             <div className="flex items-center justify-between border-b border-white/10 pb-4">
               <span className="text-xs font-mono font-bold text-cyan-400 uppercase tracking-wider">

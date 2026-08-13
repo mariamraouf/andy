@@ -62,7 +62,7 @@ export const GrowthEngine: React.FC = () => {
   ];
 
   return (
-    <section id="engine" className="py-20 bg-[#07090E] text-white relative">
+    <section id="engine" className="py-20 bg-[#030712] text-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -95,7 +95,7 @@ export const GrowthEngine: React.FC = () => {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className={`p-3 rounded-xl bg-[#07090E] border border-white/10 ${item.accent}`}>
+                  <div className={`p-3 rounded-xl bg-[#030712] border border-white/10 ${item.accent}`}>
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">

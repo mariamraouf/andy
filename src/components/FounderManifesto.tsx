@@ -3,7 +3,7 @@ import { Quote, Flame, Heart, Target, ShieldAlert, Award } from "lucide-react";
 
 export const FounderManifesto: React.FC = () => {
   return (
-    <section id="manifesto" className="py-20 bg-[#0B0F17] text-white relative border-y border-white/10">
+    <section id="manifesto" className="py-20 bg-[#07090E] text-white relative border-y border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid lg:grid-cols-12 gap-12 items-center">
@@ -55,7 +55,7 @@ export const FounderManifesto: React.FC = () => {
             {/* Core Commitments */}
             <div className="grid sm:grid-cols-2 gap-5">
               
-              <div className="bg-[#07090E] rounded-2xl p-5 border border-white/5 space-y-2">
+              <div className="bg-[#030712] rounded-2xl p-5 border border-white/5 space-y-2">
                 <div className="w-9 h-9 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
                   <Target className="w-4 h-4" />
                 </div>
@@ -65,7 +65,7 @@ export const FounderManifesto: React.FC = () => {
                 </p>
               </div>
 
-              <div className="bg-[#07090E] rounded-2xl p-5 border border-white/5 space-y-2">
+              <div className="bg-[#030712] rounded-2xl p-5 border border-white/5 space-y-2">
                 <div className="w-9 h-9 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
                   <Heart className="w-4 h-4" />
                 </div>
@@ -75,7 +75,7 @@ export const FounderManifesto: React.FC = () => {
                 </p>
               </div>
 
-              <div className="bg-[#07090E] rounded-2xl p-5 border border-white/5 space-y-2">
+              <div className="bg-[#030712] rounded-2xl p-5 border border-white/5 space-y-2">
                 <div className="w-9 h-9 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
                   <Award className="w-4 h-4" />
                 </div>
@@ -85,7 +85,7 @@ export const FounderManifesto: React.FC = () => {
                 </p>
               </div>
 
-              <div className="bg-[#07090E] rounded-2xl p-5 border border-white/5 space-y-2">
+              <div className="bg-[#030712] rounded-2xl p-5 border border-white/5 space-y-2">
                 <div className="w-9 h-9 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
                   <ShieldAlert className="w-4 h-4" />
                 </div>
