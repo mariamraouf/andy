@@ -1,5 +1,6 @@
 import React from "react";
-import { Flame, Mail, Phone, MapPin, ShieldCheck, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Flame, ShieldCheck, Phone, Mail, MapPin } from "lucide-react";
 
 export const Footer: React.FC = () => {
   return (
@@ -20,43 +21,44 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-md">
-              Rooted in St. Croix grit and competitive drive. Built to help small business owners, doctors, contractors, and entrepreneurs build sustainable, high-margin market dominance.
+              Rooted in St. Croix grit and competitive drive. Built to help doctors, contractors, restaurants, and entrepreneurs win high-paying clients, eliminate lost phone calls, and destroy local competition.
             </p>
 
             <div className="inline-flex items-center gap-2 text-xs text-amber-400 bg-amber-500/10 px-3 py-1.5 rounded-full border border-amber-500/20 font-mono">
               <ShieldCheck className="w-4 h-4 text-amber-400" />
-              <span>Direct Client Support via WhatsApp & ClickUp</span>
+              <span>Direct Support via WhatsApp & ClickUp</span>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Page Links */}
           <div className="md:col-span-3 space-y-3">
             <h4 className="text-xs font-mono font-bold uppercase text-amber-400 tracking-wider">
-              Industry Playbooks
+              Navigation
             </h4>
             <ul className="space-y-2 text-xs text-slate-300">
-              <li>Medical & Dental Practices</li>
-              <li>Roofing & Construction</li>
-              <li>Landscaping & Commercial Grounds</li>
-              <li>Local Restaurants & Hospitality</li>
-              <li>Startups & GoHighLevel Setup</li>
+              <li><Link to="/" className="hover:text-amber-400 transition-colors">Home Engine</Link></li>
+              <li><Link to="/about" className="hover:text-amber-400 transition-colors">Andy's Story & Manifesto</Link></li>
+              <li><Link to="/services" className="hover:text-amber-400 transition-colors">Services & Systems</Link></li>
+              <li><Link to="/industries" className="hover:text-amber-400 transition-colors">Industry Playbooks</Link></li>
+              <li><Link to="/calculator" className="hover:text-amber-400 transition-colors">ROI Calculator</Link></li>
+              <li><Link to="/contact" className="hover:text-amber-400 transition-colors">Claim Growth Audit</Link></li>
             </ul>
           </div>
 
-          {/* Growth Stack */}
+          {/* Tech & Ops */}
           <div className="md:col-span-4 space-y-3">
             <h4 className="text-xs font-mono font-bold uppercase text-amber-400 tracking-wider">
               Integrated Tech & Operations
             </h4>
             <div className="flex flex-wrap gap-2 text-xs text-slate-300">
-              {["Apollo Sourcing", "ClickUp Management", "GoHighLevel CRM", "PBX Smart Phone", "Meta & Google Ads"].map((tech, i) => (
+              {["Apollo Lead Sourcing", "Human Cold Calling", "Smart AI Phone Recovery", "ClickUp CRM", "GoHighLevel", "Meta & Google Ads"].map((tech, i) => (
                 <span key={i} className="bg-slate-900 border border-slate-800 px-2.5 py-1 rounded-md font-mono">
                   {tech}
                 </span>
               ))}
             </div>
             <p className="text-xs text-slate-400 pt-2">
-              "We focus on marketing & sales first so you get clients, then operational efficiency follows."
+              "We focus on revenue first. We treat every client dollar as if it came from our own pocket." — Andy
             </p>
           </div>
 
