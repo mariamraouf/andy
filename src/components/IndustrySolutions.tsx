@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Stethoscope, Home, Trees, Utensils, Rocket, ArrowRight, CheckCircle2, Shield } from "lucide-react";
+import { Stethoscope, Home, Trees, Utensils, Rocket, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface SolutionsProps {
@@ -12,77 +12,67 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
   const industries = [
     {
       id: "medical",
-      title: "Medical & Healthcare",
+      title: "Medical Clinics",
       icon: Stethoscope,
-      badge: "High Ticket Patient Consults",
-      heading: "Fill Your Appointment Book with High-Value Patient Consultations",
+      heading: "High-Ticket Patient Consultations & Zero No-Shows",
       description:
-        "Medical clinics, specialty practices, and wellness centers need trust and steady patient volume. We target local patients looking for treatments, handle pre-consultation lead verification, and streamline appointment booking.",
-      outcomes: [
-        "Patient Consultation Growth: +30% to +60% within 60 days",
-        "Zero-Show Protection: Automated SMS reminders & deposit confirmations",
-        "HIPAA-conscious lead capture workflows",
-        "Targeted local radius ads for cosmetic, dental, & specialty care",
+        "Specialty medical and dental practices need high trust and reliable volume. We handle pre-consultation lead qualification and SMS appointment confirmations.",
+      deliverables: [
+        "Patient consultation booking sequences",
+        "Automated deposit & SMS reminder flows",
+        "Targeted local radius patient acquisition",
       ],
     },
     {
       id: "roofing",
       title: "Roofing & Construction",
       icon: Home,
-      badge: "Storm & Replacement Leads",
-      heading: "Dominate Local Roofing Contracts Before Competitors Show Up",
+      heading: "Commercial Contracts & Storm Quote Requests",
       description:
-        "Roofing and storm damage contractors rely on speed. When property owners need quotes or inspection reports, our human outreach and instant missed-call recovery lock them in before they call another contractor.",
-      outcomes: [
-        "High-Ticket Inspection Bookings ($10k-$40k job potential)",
-        "Direct cold outreach to commercial property managers",
-        "Instant SMS Text-Back when you're busy on a roof",
-        "High-converting landing pages built for emergency quote requests",
+        "Contractors need rapid response. When roof replacement requests come in, our instant text-back locks them in before they reach out to another contractor.",
+      deliverables: [
+        "High-ticket estimate bookings ($10k-$40k scope)",
+        "Direct outreach to commercial property managers",
+        "Instant call text-back when crews are on job sites",
       ],
     },
     {
       id: "landscaping",
-      title: "Landscaping & Lawn Care",
+      title: "Landscaping & Grounds",
       icon: Trees,
-      badge: "Recurring Contracts",
-      heading: "Lock In High-Margin Residential & Commercial Maintenance Accounts",
+      heading: "Recurring HOA & Commercial Maintenance Retainers",
       description:
-        "Build a predictable recurring revenue engine. We help landscaping companies win high-end residential neighborhood clusters and lucrative commercial HOA contracts.",
-      outcomes: [
-        "Recurring Monthly Service Retainers",
-        "Commercial Property & HOA Decision Maker Targeting",
-        "Route-density lead generation (target neighbors of active jobs)",
-        "Automated estimate request scheduling",
+        "Build a recurring monthly revenue engine. We help landscaping companies win lucrative HOA and commercial property maintenance retainers.",
+      deliverables: [
+        "Commercial HOA decision maker outreach",
+        "Neighborhood route-density campaigns",
+        "Predictable monthly maintenance retainers",
       ],
     },
     {
       id: "restaurants",
-      title: "Restaurants & Dining",
+      title: "Restaurants & Catering",
       icon: Utensils,
-      badge: "Foot Traffic & VIP Clubs",
-      heading: "Pack Tables, Boost Catering Orders, and Build a Loyal Local VIP Club",
+      heading: "Corporate Catering Accounts & VIP Dining Clubs",
       description:
-        "Local restaurants need consistent foot traffic and profitable catering clients. We build hyper-local ad engines and VIP dining clubs that keep seats full on slow weeknights.",
-      outcomes: [
-        "Catering & Private Event Direct Outreach to Local Businesses",
-        "VIP SMS Loyalty Club (Turn 1-time diners into regulars)",
-        "Hyper-local social ads featuring signature dishes",
-        "Google Business Profile optimization for 'near me' searches",
+        "Pack tables on slow nights and secure corporate catering orders. We perform direct B2B office outreach and build local VIP dining clubs.",
+      deliverables: [
+        "B2B corporate catering direct outreach",
+        "VIP SMS loyalty club for repeat diners",
+        "Hyper-local social dining campaigns",
       ],
     },
     {
       id: "startups",
       title: "Startups & Local SMBs",
       icon: Rocket,
-      badge: "0 to 1 Customer Engine",
-      heading: "Build Your Sales Engine From Scratch Without Wasting Capital",
+      heading: "0-to-1 Customer Acquisition & Sales Scripts",
       description:
-        "Starting a business without leads is terrifying. We set up your entire sales machine—from lead sourcing in Apollo to custom sales scripts and GoHighLevel CRM setup.",
-      outcomes: [
-        "Complete GoHighLevel / ClickUp Sales Pipeline Setup",
-        "First 500-1,000 Verified B2B Decision Maker Prospect List",
-        "Cold Call & Email Scripts Crafted by Experienced Sales Leads",
-        "Founder-led strategy to validate offer and close initial clients",
+        "Build a predictable customer acquisition strategy from scratch with verified prospect sourcing and founder-led sales scripts.",
+      deliverables: [
+        "First 500-1,000 verified decision maker list",
+        "Custom consultative sales scripting",
+        "Initial 10 paying client acquisition playbook",
       ],
     },
   ];
@@ -90,24 +80,24 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
   const current = industries.find((i) => i.id === activeTab) || industries[0];
 
   return (
-    <section id="solutions" className="py-20 bg-white text-slate-900 relative border-b border-slate-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="solutions" className="py-20 bg-white text-slate-900 border-b border-slate-100">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 space-y-12">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 text-[#0B1B3D] font-bold text-xs uppercase tracking-widest bg-amber-100 px-3.5 py-1.5 rounded-full border border-amber-300">
-            <span>Tailored Growth Playbooks</span>
-          </div>
-          <h2 className="text-3xl sm:text-5xl font-black text-[#0B1B3D] tracking-tight">
-            Industry Specific Acquisition Playbooks
+        <div className="text-center max-w-2xl mx-auto space-y-3">
+          <span className="text-xs font-bold text-amber-600 uppercase tracking-widest font-mono">
+            Industry Focus
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-black text-[#0B1B3D] tracking-tight">
+            Tailored Growth Playbooks
           </h2>
-          <p className="text-slate-600 text-base sm:text-lg">
-            Select your industry to explore your custom customer acquisition engine.
+          <p className="text-slate-600 text-base">
+            Select your industry to view the exact customer acquisition blueprint.
           </p>
         </div>
 
-        {/* Industry Nav Tabs */}
-        <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pt-10 pb-4 no-scrollbar">
+        {/* Clean Nav Tabs */}
+        <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-2 no-scrollbar">
           {industries.map((item) => {
             const Icon = item.icon;
             const isActive = activeTab === item.id;
@@ -115,13 +105,13 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
               <button
                 key={item.id}
                 onClick={() => setActiveTab(item.id)}
-                className={`flex items-center gap-2.5 px-5 py-3 rounded-2xl font-bold text-sm whitespace-nowrap transition-all ${
+                className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-sm whitespace-nowrap transition-all ${
                   isActive
-                    ? "bg-[#0B1B3D] text-amber-400 shadow-lg scale-105"
-                    : "bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200"
+                    ? "bg-[#0B1B3D] text-amber-400 shadow-md"
+                    : "bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200"
                 }`}
               >
-                <Icon className={`w-4 h-4 ${isActive ? "text-amber-400" : "text-slate-600"}`} />
+                <Icon className="w-4 h-4" />
                 <span>{item.title}</span>
               </button>
             );
@@ -129,101 +119,54 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
         </div>
 
         {/* Active Playbook Content Card */}
-        <div className="mt-8 bg-slate-50/80 border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden">
+        <div className="bg-slate-50 border border-slate-200/80 rounded-3xl p-8 sm:p-12 shadow-sm grid lg:grid-cols-12 gap-8 items-center">
           
-          <div className="grid lg:grid-cols-12 gap-8 items-center">
-            
-            {/* Left Content */}
-            <div className="lg:col-span-7 space-y-6">
-              
-              <div className="flex items-center gap-3">
-                <span className="bg-amber-100 text-amber-900 text-xs font-bold px-3 py-1 rounded-full border border-amber-300">
-                  {current.badge}
-                </span>
-                <span className="text-xs text-slate-500 font-mono font-bold">100% Tailored Execution</span>
-              </div>
+          <div className="lg:col-span-8 space-y-6">
+            <h3 className="text-2xl sm:text-3xl font-bold text-[#0B1B3D]">
+              {current.heading}
+            </h3>
+            <p className="text-slate-600 leading-relaxed font-normal text-base">
+              {current.description}
+            </p>
 
-              <h3 className="text-2xl sm:text-3xl font-black text-[#0B1B3D] leading-tight">
-                {current.heading}
-              </h3>
-
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
-                {current.description}
+            <div className="space-y-3 pt-2">
+              <p className="text-xs font-bold uppercase tracking-wider text-[#0B1B3D]">
+                Key Deliverables:
               </p>
-
-              {/* Expected Outcomes */}
-              <div className="space-y-3 pt-2">
-                <p className="text-xs font-bold uppercase tracking-wider text-[#0B1B3D]">
-                  Key System Deliverables:
-                </p>
-                <div className="grid gap-2.5">
-                  {current.outcomes.map((outcome, idx) => (
-                    <div key={idx} className="flex items-start gap-3 text-slate-800 text-sm font-semibold">
-                      <div className="w-5 h-5 rounded-full bg-amber-500 text-[#0B1B3D] flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs shadow-xs">
-                        ✓
-                      </div>
-                      <span>{outcome}</span>
-                    </div>
-                  ))}
-                </div>
+              <div className="space-y-2">
+                {current.deliverables.map((del, idx) => (
+                  <div key={idx} className="flex items-center gap-3 text-slate-800 text-sm font-semibold">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                    <span>{del}</span>
+                  </div>
+                ))}
               </div>
-
-              {/* Strategy & CTA */}
-              <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-                <Button
-                  onClick={() => onSelectIndustry(current.title)}
-                  className="bg-amber-500 hover:bg-amber-600 text-[#0B1B3D] font-black px-7 py-5 rounded-xl shadow-lg flex items-center justify-center gap-2"
-                >
-                  <span>Build My {current.title} Strategy</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Button>
-
-                <div className="text-xs text-slate-600 flex items-center gap-2 px-3.5 py-2.5 bg-white rounded-xl border border-slate-200 font-medium">
-                  <Shield className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>Custom Campaign Setup included in 30-day plan</span>
-                </div>
-              </div>
-
             </div>
 
-            {/* Right Interactive Blueprint Box */}
-            <div className="lg:col-span-5 bg-[#0B1B3D] text-white rounded-2xl p-6 border border-slate-800 space-y-4 shadow-2xl">
-              
-              <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                <span className="text-xs font-mono font-bold text-amber-400 uppercase">
-                  Growth Engine Steps
-                </span>
-                <span className="text-[10px] text-slate-400 font-mono">ST. CROIX ENGINE</span>
-              </div>
-
-              <div className="space-y-3">
-                
-                <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
-                  <p className="text-[11px] text-amber-400 font-mono font-bold">STEP 1: PROSPECTING</p>
-                  <p className="text-sm font-bold text-white mt-0.5">Apollo Verified Lead Sourcing</p>
-                  <p className="text-xs text-slate-300 mt-1">Filter decision makers by zip code & verified mobile contacts.</p>
-                </div>
-
-                <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
-                  <p className="text-[11px] text-amber-400 font-mono font-bold">STEP 2: OUTREACH</p>
-                  <p className="text-sm font-bold text-white mt-0.5">Human Cold Caller + LinkedIn Outreach</p>
-                  <p className="text-xs text-slate-300 mt-1">Custom phone scripts that open real consultative conversations.</p>
-                </div>
-
-                <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
-                  <p className="text-[11px] text-amber-400 font-mono font-bold">STEP 3: CALL RECOVERY</p>
-                  <p className="text-sm font-bold text-white mt-0.5">Smart AI Missed-Call SMS Text-Back</p>
-                  <p className="text-xs text-slate-300 mt-1">Captures inbound callers instantly if your staff is on a job site.</p>
-                </div>
-
-              </div>
-
-              <div className="pt-2 text-center text-xs text-slate-300">
-                <span className="text-amber-400 font-bold">100% Managed Execution</span> by Andy & Team
-              </div>
-
+            <div className="pt-4">
+              <Button
+                onClick={() => onSelectIndustry(current.title)}
+                className="bg-amber-500 hover:bg-amber-600 text-[#0B1B3D] font-black px-7 py-5 rounded-xl shadow-md flex items-center gap-2"
+              >
+                <span>Build My {current.title} Plan</span>
+                <ArrowRight className="w-4 h-4" />
+              </Button>
             </div>
+          </div>
 
+          <div className="lg:col-span-4 bg-[#0B1B3D] text-white rounded-2xl p-6 space-y-4 shadow-xl">
+            <span className="text-xs font-mono font-bold text-amber-400 uppercase">Growth Workflow</span>
+            <div className="space-y-3 text-xs text-slate-300">
+              <div className="p-3 bg-slate-900 rounded-xl border border-slate-800">
+                <span className="font-bold text-white">1. Verified Sourcing:</span> Local decision maker lists.
+              </div>
+              <div className="p-3 bg-slate-900 rounded-xl border border-slate-800">
+                <span className="font-bold text-white">2. Human Outreach:</span> Consultative phone calls.
+              </div>
+              <div className="p-3 bg-slate-900 rounded-xl border border-slate-800">
+                <span className="font-bold text-white">3. Smart Recovery:</span> Sub-10s missed call SMS text-back.
+              </div>
+            </div>
           </div>
 
         </div>
