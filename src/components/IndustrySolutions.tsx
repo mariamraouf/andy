@@ -14,7 +14,7 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
       id: "medical",
       title: "Medical & Healthcare",
       icon: Stethoscope,
-      badge: "High Ticket Patient Care",
+      badge: "High Ticket Patient Consults",
       heading: "Fill Your Appointment Book with High-Value Patient Consultations",
       description:
         "Medical clinics, specialty practices, and wellness centers need trust and steady patient volume. We target local patients looking for treatments, handle pre-consultation lead verification, and streamline appointment booking.",
@@ -74,7 +74,7 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
       id: "startups",
       title: "Startups & Local SMBs",
       icon: Rocket,
-      badge: "0 to 1 Customer Growth",
+      badge: "0 to 1 Customer Engine",
       heading: "Build Your Sales Engine From Scratch Without Wasting Capital",
       description:
         "Starting a business without leads is terrifying. We set up your entire sales machine—from lead sourcing in Apollo to custom sales scripts and GoHighLevel CRM setup.",
@@ -90,19 +90,19 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
   const current = industries.find((i) => i.id === activeTab) || industries[0];
 
   return (
-    <section id="solutions" className="py-20 bg-white text-slate-900 relative border-b border-slate-200">
+    <section id="solutions" className="py-20 bg-white text-slate-900 relative border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 text-[#0B1B3D] font-bold text-xs uppercase tracking-widest bg-amber-100 px-3.5 py-1.5 rounded-full border border-amber-300">
-            <span>Tailored Growth Engine Playbooks</span>
+            <span>Tailored Growth Playbooks</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-[#0B1B3D] tracking-tight">
-            Industry Specific Acquisition Systems
+            Industry Specific Acquisition Playbooks
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
-            We deploy systems tuned specifically to your industry's exact customer buying behavior.
+            Select your industry to explore your custom customer acquisition engine.
           </p>
         </div>
 
@@ -115,7 +115,7 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
               <button
                 key={item.id}
                 onClick={() => setActiveTab(item.id)}
-                className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-sm whitespace-nowrap transition-all ${
+                className={`flex items-center gap-2.5 px-5 py-3 rounded-2xl font-bold text-sm whitespace-nowrap transition-all ${
                   isActive
                     ? "bg-[#0B1B3D] text-amber-400 shadow-lg scale-105"
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200"
@@ -128,8 +128,8 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
           })}
         </div>
 
-        {/* Active Industry Card Content */}
-        <div className="mt-8 bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden">
+        {/* Active Playbook Content Card */}
+        <div className="mt-8 bg-slate-50/80 border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden">
           
           <div className="grid lg:grid-cols-12 gap-8 items-center">
             
@@ -137,29 +137,29 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
             <div className="lg:col-span-7 space-y-6">
               
               <div className="flex items-center gap-3">
-                <span className="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full border border-amber-300">
+                <span className="bg-amber-100 text-amber-900 text-xs font-bold px-3 py-1 rounded-full border border-amber-300">
                   {current.badge}
                 </span>
-                <span className="text-xs text-slate-500 font-mono font-bold">100% Tailored Playbook</span>
+                <span className="text-xs text-slate-500 font-mono font-bold">100% Tailored Execution</span>
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-black text-[#0B1B3D] leading-tight">
                 {current.heading}
               </h3>
 
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
                 {current.description}
               </p>
 
               {/* Expected Outcomes */}
               <div className="space-y-3 pt-2">
                 <p className="text-xs font-bold uppercase tracking-wider text-[#0B1B3D]">
-                  Target Deliverables & Capabilities:
+                  Key System Deliverables:
                 </p>
                 <div className="grid gap-2.5">
                   {current.outcomes.map((outcome, idx) => (
-                    <div key={idx} className="flex items-start gap-3 text-slate-800 text-sm font-medium">
-                      <div className="w-5 h-5 rounded-full bg-amber-500 text-[#0B1B3D] flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">
+                    <div key={idx} className="flex items-start gap-3 text-slate-800 text-sm font-semibold">
+                      <div className="w-5 h-5 rounded-full bg-amber-500 text-[#0B1B3D] flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs shadow-xs">
                         ✓
                       </div>
                       <span>{outcome}</span>
@@ -172,13 +172,13 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
               <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                 <Button
                   onClick={() => onSelectIndustry(current.title)}
-                  className="bg-amber-500 hover:bg-amber-600 text-[#0B1B3D] font-black px-6 py-5 rounded-xl shadow-lg flex items-center justify-center gap-2"
+                  className="bg-amber-500 hover:bg-amber-600 text-[#0B1B3D] font-black px-7 py-5 rounded-xl shadow-lg flex items-center justify-center gap-2"
                 >
                   <span>Build My {current.title} Strategy</span>
                   <ArrowRight className="w-4 h-4" />
                 </Button>
 
-                <div className="text-xs text-slate-600 flex items-center gap-2 px-3 py-2 bg-white rounded-lg border border-slate-200">
+                <div className="text-xs text-slate-600 flex items-center gap-2 px-3.5 py-2.5 bg-white rounded-xl border border-slate-200 font-medium">
                   <Shield className="w-4 h-4 text-emerald-600 shrink-0" />
                   <span>Custom Campaign Setup included in 30-day plan</span>
                 </div>
@@ -191,7 +191,7 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
               
               <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                 <span className="text-xs font-mono font-bold text-amber-400 uppercase">
-                  Growth Blueprint Steps
+                  Growth Engine Steps
                 </span>
                 <span className="text-[10px] text-slate-400 font-mono">ST. CROIX ENGINE</span>
               </div>
@@ -201,7 +201,7 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
                 <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
                   <p className="text-[11px] text-amber-400 font-mono font-bold">STEP 1: PROSPECTING</p>
                   <p className="text-sm font-bold text-white mt-0.5">Apollo Verified Lead Sourcing</p>
-                  <p className="text-xs text-slate-300 mt-1">Filtering targets by location & direct owner mobile numbers.</p>
+                  <p className="text-xs text-slate-300 mt-1">Filter decision makers by zip code & verified mobile contacts.</p>
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">

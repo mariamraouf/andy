@@ -1,9 +1,9 @@
 import React from "react";
-import { Quote, Flame, Heart, Target, ShieldAlert, Award, TreePalm as PalmTree } from "lucide-react";
+import { Quote, Heart, Target, ShieldAlert, Award, TreePalm as PalmTree } from "lucide-react";
 
 export const FounderManifesto: React.FC = () => {
   return (
-    <section id="manifesto" className="py-20 bg-slate-50 text-slate-900 relative border-b border-slate-200">
+    <section id="manifesto" className="py-20 bg-white text-slate-900 relative border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid lg:grid-cols-12 gap-12 items-center">
@@ -55,42 +55,42 @@ export const FounderManifesto: React.FC = () => {
             {/* Core Commitments */}
             <div className="grid sm:grid-cols-2 gap-5">
               
-              <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-2">
+              <div className="bg-slate-50 rounded-2xl p-5 border border-slate-200 shadow-xs space-y-2">
                 <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center">
                   <Target className="w-5 h-5" />
                 </div>
                 <h4 className="font-bold text-[#0B1B3D] text-base">Competitive Obsession</h4>
-                <p className="text-xs text-slate-600 leading-relaxed">
+                <p className="text-xs text-slate-600 leading-relaxed font-medium">
                   We study your local market like a battlefield, reverse-engineering competitor weaknesses to capture high-value prospects.
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-2">
+              <div className="bg-slate-50 rounded-2xl p-5 border border-slate-200 shadow-xs space-y-2">
                 <div className="w-10 h-10 rounded-xl bg-blue-100 text-[#0B1B3D] flex items-center justify-center">
                   <Heart className="w-5 h-5" />
                 </div>
                 <h4 className="font-bold text-[#0B1B3D] text-base">Client Loyalty First</h4>
-                <p className="text-xs text-slate-600 leading-relaxed">
+                <p className="text-xs text-slate-600 leading-relaxed font-medium">
                   No burning through client money. We focus on real ROI, treating every dollar as if it came from our own pocket.
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-2">
+              <div className="bg-slate-50 rounded-2xl p-5 border border-slate-200 shadow-xs space-y-2">
                 <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
                   <Award className="w-5 h-5" />
                 </div>
                 <h4 className="font-bold text-[#0B1B3D] text-base">Direct Human Touch</h4>
-                <p className="text-xs text-slate-600 leading-relaxed">
+                <p className="text-xs text-slate-600 leading-relaxed font-medium">
                   No ticket walls. You get direct WhatsApp and ClickUp access so strategy adjustments happen in minutes, not weeks.
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-2">
+              <div className="bg-slate-50 rounded-2xl p-5 border border-slate-200 shadow-xs space-y-2">
                 <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center">
                   <ShieldAlert className="w-5 h-5" />
                 </div>
                 <h4 className="font-bold text-[#0B1B3D] text-base">Verified Lead Guarantee</h4>
-                <p className="text-xs text-slate-600 leading-relaxed">
+                <p className="text-xs text-slate-600 leading-relaxed font-medium">
                   We pre-verify direct owner contacts so your team spends time closing real, qualified buyers.
                 </p>
               </div>
