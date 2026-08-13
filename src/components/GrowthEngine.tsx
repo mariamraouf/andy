@@ -7,7 +7,7 @@ export const GrowthEngine: React.FC = () => {
       step: "PILLAR 1",
       icon: Database,
       title: "Apollo Lead Enrichment & Sourcing",
-      subtitle: "Precision Targeting",
+      subtitle: "Precision Sourcing",
       description:
         "We filter business databases to pinpoint new startups created in the last 90 days, local clinic directors, roof contractors, and property owners. Verified direct phone numbers and emails.",
       points: [
@@ -15,13 +15,13 @@ export const GrowthEngine: React.FC = () => {
         "Recent business creation filtering (<90 days)",
         "Zero wasted cold calls or dead numbers",
       ],
-      accent: "text-cyan-400",
+      accent: "text-amber-600",
     },
     {
       step: "PILLAR 2",
       icon: PhoneCall,
       title: "Human Sales Outreach & Custom Scripts",
-      subtitle: "Empathetic Closing",
+      subtitle: "Consultative Closing",
       description:
         "Cold calling without skill burns your reputation. We deploy skilled sales callers armed with custom scripts that identify pain points, offer immediate value, and book appointments onto your calendar.",
       points: [
@@ -29,7 +29,7 @@ export const GrowthEngine: React.FC = () => {
         "Skilled, persuasive sales leads",
         "Strict KPI tracking & conversion auditing",
       ],
-      accent: "text-indigo-400",
+      accent: "text-[#0B1B3D]",
     },
     {
       step: "PILLAR 3",
@@ -43,7 +43,7 @@ export const GrowthEngine: React.FC = () => {
         "Instant call routing directly to mobile phones",
         "Captures hot buyers before they call a rival",
       ],
-      accent: "text-emerald-400",
+      accent: "text-emerald-700",
     },
     {
       step: "PILLAR 4",
@@ -57,23 +57,23 @@ export const GrowthEngine: React.FC = () => {
         "Conversion-focused custom pages",
         "Transparent real-time ad reporting",
       ],
-      accent: "text-cyan-400",
+      accent: "text-amber-600",
     },
   ];
 
   return (
-    <section id="engine" className="py-20 bg-[#030712] text-white relative">
+    <section id="engine" className="py-20 bg-white text-slate-900 relative border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 text-cyan-400 font-mono text-xs uppercase tracking-widest bg-cyan-500/10 px-3.5 py-1 rounded-full border border-cyan-500/20">
+          <div className="inline-flex items-center gap-2 text-[#0B1B3D] font-bold text-xs uppercase tracking-widest bg-amber-100 px-3.5 py-1.5 rounded-full border border-amber-300">
             <span>The 4-Pillar System</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-black text-[#0B1B3D] tracking-tight">
             How The Cruzian Engine Operates
           </h2>
-          <p className="text-slate-400 text-base sm:text-lg">
+          <p className="text-slate-600 text-base sm:text-lg">
             A battle-tested client acquisition system designed to turn cold markets into predictable, high-margin revenue.
           </p>
         </div>
@@ -85,32 +85,32 @@ export const GrowthEngine: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="glass-panel rounded-3xl p-8 border border-white/10 shadow-xl space-y-5 relative overflow-hidden group hover:border-cyan-500/40 transition-all"
+                className="bg-slate-50 rounded-3xl p-8 border border-slate-200 shadow-sm space-y-5 relative overflow-hidden group hover:border-amber-400 transition-all"
               >
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-mono font-semibold text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">
+                  <span className="text-xs font-mono font-bold text-[#0B1B3D] bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
                     {item.step}
                   </span>
-                  <span className="text-xs text-slate-500 font-mono">{item.subtitle}</span>
+                  <span className="text-xs text-slate-500 font-mono font-bold">{item.subtitle}</span>
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className={`p-3 rounded-xl bg-[#030712] border border-white/10 ${item.accent}`}>
+                  <div className={`p-3 rounded-xl bg-white border border-slate-200 shadow-xs ${item.accent}`}>
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  <h3 className="text-xl font-bold text-[#0B1B3D] group-hover:text-amber-600 transition-colors">
                     {item.title}
                   </h3>
                 </div>
 
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <p className="text-slate-600 text-sm leading-relaxed">
                   {item.description}
                 </p>
 
-                <div className="space-y-2 pt-2 border-t border-white/5">
+                <div className="space-y-2 pt-2 border-t border-slate-200">
                   {item.points.map((p, pIdx) => (
-                    <div key={pIdx} className="flex items-center gap-2 text-xs text-slate-300">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                    <div key={pIdx} className="flex items-center gap-2 text-xs text-slate-800 font-medium">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-amber-600 shrink-0" />
                       <span>{p}</span>
                     </div>
                   ))}
