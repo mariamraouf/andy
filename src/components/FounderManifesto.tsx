@@ -1,5 +1,5 @@
 import React from "react";
-import { Quote, Flame, Heart, Target, ShieldAlert, Award, PalmTree } from "lucide-react";
+import { Quote, Flame, Heart, Target, ShieldAlert, Award, TreePalm as PalmTree } from "lucide-react";
 
 export const FounderManifesto: React.FC = () => {
   return (

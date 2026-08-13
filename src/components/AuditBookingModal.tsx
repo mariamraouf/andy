@@ -3,7 +3,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { CheckCircle2, ArrowRight, ShieldCheck, Phone, Mail, User, Building, Sparkles, PalmTree } from "lucide-react";
+import { CheckCircle2, ArrowRight, ShieldCheck, Phone, Mail, User, Building, Sparkles, TreePalm as PalmTree } from "lucide-react";
 import { showSuccess } from "@/utils/toast";
 
 interface ModalProps {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { PalmTree, ShieldCheck } from "lucide-react";
+import { TreePalm as PalmTree, ShieldCheck } from "lucide-react";
 
 export const Footer: React.FC = () => {
   return (

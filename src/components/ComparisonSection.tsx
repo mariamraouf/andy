@@ -1,5 +1,5 @@
 import React from "react";
-import { ShieldCheck, PalmTree } from "lucide-react";
+import { ShieldCheck, TreePalm as PalmTree } from "lucide-react";
 
 export const ComparisonSection: React.FC = () => {
   const comparisons = [

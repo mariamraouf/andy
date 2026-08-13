@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { PalmTree, Menu, X, ArrowRight, PhoneCall } from "lucide-react";
+import { TreePalm as PalmTree, Menu, X, ArrowRight, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface NavbarProps {
