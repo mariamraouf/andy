@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
           {/* Brand & Mission */}
           <div className="md:col-span-5 space-y-4">
             <Link to="/" className="inline-block">
-              <Logo size="lg" />
+              <Logo size="lg" variant="plain" />
             </Link>
 
             <p className="text-slate-300 text-sm leading-relaxed max-w-sm font-normal">
