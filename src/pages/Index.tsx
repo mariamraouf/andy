@@ -60,26 +60,26 @@ const Index: React.FC = () => {
       {/* Side-by-Side Comparison */}
       <ComparisonSection />
 
-      {/* Elegant High-Impact Call to Action Banner */}
-      <section className="py-24 bg-white">
+      {/* Elegant High-Impact Call to Action Banner on White Canvas */}
+      <section className="py-20 bg-white border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#0B1B3D] text-white rounded-3xl p-8 sm:p-14 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 border border-slate-800 relative overflow-hidden">
+          <div className="bg-slate-50 text-slate-900 rounded-3xl p-8 sm:p-14 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-8 border border-slate-200 relative overflow-hidden">
             <div className="space-y-3 text-center lg:text-left z-10">
-              <div className="inline-flex items-center gap-2 text-amber-400 bg-amber-500/10 px-3.5 py-1 rounded-full border border-amber-500/20 text-xs font-mono font-bold">
-                <Sparkles className="w-3.5 h-3.5" />
+              <div className="inline-flex items-center gap-2 text-[#0B1B3D] bg-amber-100 px-3.5 py-1 rounded-full border border-amber-300 text-xs font-mono font-bold">
+                <Sparkles className="w-3.5 h-3.5 text-amber-700" />
                 <span>Zero Risk • Founder Consultation</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-black tracking-tight">
+              <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-[#0B1B3D]">
                 Ready to Claim Your Local Territory?
               </h2>
-              <p className="text-slate-300 max-w-xl text-sm sm:text-base font-normal">
+              <p className="text-slate-600 max-w-xl text-sm sm:text-base font-normal">
                 Receive a bespoke 30-day client acquisition blueprint drafted directly by Andy. We inspect your local competition and show you where deals are slipping.
               </p>
             </div>
 
             <Button
               onClick={() => handleOpenAudit()}
-              className="bg-amber-500 hover:bg-amber-600 text-[#0B1B3D] font-black px-8 py-6 rounded-2xl text-base shadow-xl shrink-0 z-10 flex items-center gap-2"
+              className="bg-amber-500 hover:bg-amber-600 text-[#0B1B3D] font-black px-8 py-6 rounded-2xl text-base shadow-lg shrink-0 z-10 flex items-center gap-2"
             >
               <span>CLAIM FREE AUDIT NOW</span>
               <ArrowRight className="w-5 h-5" />

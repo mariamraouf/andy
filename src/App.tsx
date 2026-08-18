@@ -10,7 +10,7 @@ import { MadeWithDyad } from "@/components/made-with-dyad";
 import { AuditBookingModal } from "@/components/AuditBookingModal";
 
 // Pages
-import { Home } from "@/pages/Home";
+import Index from "@/pages/Index";
 import { About } from "@/pages/About";
 import { Services } from "@/pages/Services";
 import { Industries } from "@/pages/Industries";
@@ -37,14 +37,14 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans selection:bg-amber-500 selection:text-slate-950">
+          <div className="min-h-screen bg-white text-slate-900 flex flex-col font-sans selection:bg-amber-400 selection:text-slate-950">
             {/* Header Navbar */}
             <Navbar onOpenAudit={() => handleOpenAudit()} />
 
             {/* Route Content Pages */}
-            <main className="flex-1">
+            <main className="flex-1 bg-white">
               <Routes>
-                <Route path="/" element={<Home onOpenAudit={() => handleOpenAudit()} />} />
+                <Route path="/" element={<Index />} />
                 <Route path="/about" element={<About onOpenAudit={() => handleOpenAudit()} />} />
                 <Route path="/services" element={<Services onOpenAudit={() => handleOpenAudit()} />} />
                 <Route path="/industries" element={<Industries onOpenAudit={(ind) => handleOpenAudit(ind)} />} />
@@ -57,7 +57,7 @@ const App = () => {
             {/* Global Footer */}
             <Footer />
 
-            <div className="bg-slate-950 border-t border-slate-900">
+            <div className="bg-slate-50 border-t border-slate-200">
               <MadeWithDyad />
             </div>
 

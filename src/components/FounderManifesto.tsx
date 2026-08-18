@@ -4,24 +4,24 @@ import { Quote, TreePalm as PalmTree } from "lucide-react";
 export const FounderManifesto: React.FC = () => {
   return (
     <section id="manifesto" className="py-20 bg-white text-slate-900 border-b border-slate-100">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           
-          {/* Quote Block */}
-          <div className="lg:col-span-6 bg-[#0B1B3D] text-white rounded-3xl p-8 sm:p-10 shadow-xl space-y-6">
-            <Quote className="w-10 h-10 text-amber-400/40" />
-            <blockquote className="text-lg sm:text-xl font-medium text-slate-200 leading-relaxed italic">
-              "A lot of agencies out there are just taking your retainer money and blowing it while treating client businesses like numbers. I started <span className="text-amber-400 font-bold not-italic">The Cruzian</span> because I genuinely care. I’m competitive as hell, I play to win, and I want to be the last one standing for our clients."
+          {/* Quote Block on White Canvas */}
+          <div className="lg:col-span-6 bg-slate-50 rounded-3xl p-8 sm:p-10 shadow-sm border border-slate-200 space-y-6">
+            <Quote className="w-10 h-10 text-amber-500" />
+            <blockquote className="text-lg sm:text-xl font-medium text-slate-800 leading-relaxed italic">
+              "A lot of agencies out there are just taking your retainer money and blowing it while treating client businesses like numbers. I started <span className="text-amber-700 font-bold not-italic">The Cruzian</span> because I genuinely care. I’m competitive as hell, I play to win, and I want to be the last one standing for our clients."
             </blockquote>
 
-            <div className="pt-4 border-t border-slate-800 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-amber-500 text-[#0B1B3D] font-black text-xl flex items-center justify-center">
+            <div className="pt-4 border-t border-slate-200 flex items-center gap-4">
+              <div className="w-12 h-12 rounded-xl bg-[#0B1B3D] text-amber-400 font-black text-xl flex items-center justify-center shadow-xs">
                 A
               </div>
               <div>
-                <h3 className="font-bold text-white">Andy</h3>
-                <p className="text-xs text-amber-400 font-mono">Founder & Lead Strategist</p>
+                <h3 className="font-bold text-[#0B1B3D]">Andy</h3>
+                <p className="text-xs text-amber-700 font-mono font-bold">Founder & Lead Strategist</p>
               </div>
             </div>
           </div>

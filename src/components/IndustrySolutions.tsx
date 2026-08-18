@@ -81,7 +81,7 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
 
   return (
     <section id="solutions" className="py-20 bg-white text-slate-900 border-b border-slate-100">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 space-y-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto space-y-3">
@@ -108,7 +108,7 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
                 className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-sm whitespace-nowrap transition-all ${
                   isActive
                     ? "bg-[#0B1B3D] text-amber-400 shadow-md"
-                    : "bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200"
+                    : "bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200"
                 }`}
               >
                 <Icon className="w-4 h-4" />
@@ -119,13 +119,13 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
         </div>
 
         {/* Active Playbook Content Card */}
-        <div className="bg-slate-50 border border-slate-200/80 rounded-3xl p-8 sm:p-12 shadow-sm grid lg:grid-cols-12 gap-8 items-center">
+        <div className="bg-slate-50 border border-slate-200 rounded-3xl p-8 sm:p-12 shadow-sm grid lg:grid-cols-12 gap-8 items-center">
           
           <div className="lg:col-span-8 space-y-6">
             <h3 className="text-2xl sm:text-3xl font-bold text-[#0B1B3D]">
               {current.heading}
             </h3>
-            <p className="text-slate-600 leading-relaxed font-normal text-base">
+            <p className="text-slate-600 leading-relaxed font-medium text-base">
               {current.description}
             </p>
 
@@ -154,17 +154,17 @@ export const IndustrySolutions: React.FC<SolutionsProps> = ({ onSelectIndustry }
             </div>
           </div>
 
-          <div className="lg:col-span-4 bg-[#0B1B3D] text-white rounded-2xl p-6 space-y-4 shadow-xl">
-            <span className="text-xs font-mono font-bold text-amber-400 uppercase">Growth Workflow</span>
-            <div className="space-y-3 text-xs text-slate-300">
-              <div className="p-3 bg-slate-900 rounded-xl border border-slate-800">
-                <span className="font-bold text-white">1. Verified Sourcing:</span> Local decision maker lists.
+          <div className="lg:col-span-4 bg-white text-slate-900 border border-slate-200 rounded-2xl p-6 space-y-4 shadow-sm">
+            <span className="text-xs font-mono font-bold text-amber-700 uppercase">Growth Workflow</span>
+            <div className="space-y-3 text-xs text-slate-700">
+              <div className="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <span className="font-bold text-[#0B1B3D]">1. Verified Sourcing:</span> Local decision maker lists.
               </div>
-              <div className="p-3 bg-slate-900 rounded-xl border border-slate-800">
-                <span className="font-bold text-white">2. Human Outreach:</span> Consultative phone calls.
+              <div className="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <span className="font-bold text-[#0B1B3D]">2. Human Outreach:</span> Consultative phone calls.
               </div>
-              <div className="p-3 bg-slate-900 rounded-xl border border-slate-800">
-                <span className="font-bold text-white">3. Smart Recovery:</span> Sub-10s missed call SMS text-back.
+              <div className="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <span className="font-bold text-[#0B1B3D]">3. Smart Recovery:</span> Sub-10s missed call SMS text-back.
               </div>
             </div>
           </div>
