@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
-import { GrowthEngine } from "@/components/GrowthEngine";
+import { GrowthArchitecture } from "@/components/GrowthArchitecture";
 import { IndustrySolutions } from "@/components/IndustrySolutions";
 import { FounderManifesto } from "@/components/FounderManifesto";
 import { RevenueCalculator } from "@/components/RevenueCalculator";
@@ -10,6 +10,7 @@ import { AuditBookingModal } from "@/components/AuditBookingModal";
 import { Footer } from "@/components/Footer";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 import { Button } from "@/components/ui/button";
+import { Sparkles, ArrowRight } from "lucide-react";
 
 const Index: React.FC = () => {
   const [isAuditOpen, setIsAuditOpen] = useState(false);
@@ -31,17 +32,17 @@ const Index: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-amber-400 selection:text-slate-950">
-      {/* Clean Navigation Bar */}
+      {/* Modern Navigation */}
       <Navbar onOpenAudit={() => handleOpenAudit()} />
 
-      {/* Spacious Visual Hero Section */}
+      {/* Hero with Interactive Command Desk */}
       <HeroSection
         onOpenAudit={() => handleOpenAudit()}
         onExploreSolutions={scrollToSolutions}
       />
 
-      {/* 3 Core System Pillars */}
-      <GrowthEngine />
+      {/* Growth Architecture & Live Phone Rescue Mockup */}
+      <GrowthArchitecture />
 
       {/* Industry Tailored Playbooks */}
       <IndustrySolutions
@@ -51,7 +52,7 @@ const Index: React.FC = () => {
       {/* Founder Manifesto & Heritage */}
       <FounderManifesto />
 
-      {/* Interactive ROI Calculator */}
+      {/* Interactive Financial ROI Calculator */}
       <RevenueCalculator
         onOpenAudit={() => handleOpenAudit()}
       />
@@ -59,30 +60,35 @@ const Index: React.FC = () => {
       {/* Side-by-Side Comparison */}
       <ComparisonSection />
 
-      {/* Call to Action Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="bg-[#0B1B3D] text-white rounded-3xl p-8 sm:p-14 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8 border border-slate-800">
-            <div className="space-y-3 text-center lg:text-left">
-              <span className="text-xs font-mono font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
-                Direct Consultation
-              </span>
-              <h2 className="text-3xl sm:text-4xl font-black tracking-tight">Ready to Win Your Local Market?</h2>
+      {/* Elegant High-Impact Call to Action Banner */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#0B1B3D] text-white rounded-3xl p-8 sm:p-14 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 border border-slate-800 relative overflow-hidden">
+            <div className="space-y-3 text-center lg:text-left z-10">
+              <div className="inline-flex items-center gap-2 text-amber-400 bg-amber-500/10 px-3.5 py-1 rounded-full border border-amber-500/20 text-xs font-mono font-bold">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Zero Risk • Founder Consultation</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-black tracking-tight">
+                Ready to Claim Your Local Territory?
+              </h2>
               <p className="text-slate-300 max-w-xl text-sm sm:text-base font-normal">
-                Get a personalized 30-day customer acquisition strategy directly from Andy.
+                Receive a bespoke 30-day client acquisition blueprint drafted directly by Andy. We inspect your local competition and show you where deals are slipping.
               </p>
             </div>
+
             <Button
               onClick={() => handleOpenAudit()}
-              className="bg-amber-500 hover:bg-amber-600 text-[#0B1B3D] font-black px-8 py-6 rounded-xl text-base shadow-lg shrink-0"
+              className="bg-amber-500 hover:bg-amber-600 text-[#0B1B3D] font-black px-8 py-6 rounded-2xl text-base shadow-xl shrink-0 z-10 flex items-center gap-2"
             >
-              Claim Free Audit Now
+              <span>CLAIM FREE AUDIT NOW</span>
+              <ArrowRight className="w-5 h-5" />
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Clean Footer */}
+      {/* Modern Footer */}
       <Footer />
 
       {/* Attribution */}
