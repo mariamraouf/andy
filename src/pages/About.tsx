@@ -1,5 +1,5 @@
 import React from "react";
-import { Quote, Flame, Heart, Target, ShieldCheck, Award, ArrowRight, MapPin, Phone } from "lucide-react";
+import { Quote, Flame, Heart, Target, ShieldCheck, Award, ArrowRight, MapPin, Phone, Users, BarChart3, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface AboutProps {
@@ -8,7 +8,7 @@ interface AboutProps {
 
 export const About: React.FC<AboutProps> = ({ onOpenAudit }) => {
   return (
-    <div className="bg-white text-slate-900 py-16 space-y-16">
+    <div className="bg-white text-slate-900 py-16 space-y-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
         {/* Header */}
@@ -25,6 +25,42 @@ export const About: React.FC<AboutProps> = ({ onOpenAudit }) => {
           </p>
         </div>
 
+        {/* Visual Showcase Gallery Grid */}
+        <div className="grid sm:grid-cols-3 gap-6">
+          <div className="rounded-3xl overflow-hidden shadow-md border border-slate-200 relative group">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80"
+              alt="Cruzian strategy team collaborating"
+              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-5">
+              <span className="text-white font-bold text-sm">Deep Strategic Collaboration</span>
+            </div>
+          </div>
+
+          <div className="rounded-3xl overflow-hidden shadow-md border border-slate-200 relative group">
+            <img
+              src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=700&q=80"
+              alt="Data-driven marketing pipeline"
+              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-5">
+              <span className="text-white font-bold text-sm">Data & Pipeline Precision</span>
+            </div>
+          </div>
+
+          <div className="rounded-3xl overflow-hidden shadow-md border border-slate-200 relative group">
+            <img
+              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=700&q=80"
+              alt="Local business partnership"
+              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-5">
+              <span className="text-white font-bold text-sm">Hands-On Client Partnership</span>
+            </div>
+          </div>
+        </div>
+
         {/* Founder Story Card */}
         <div className="grid lg:grid-cols-12 gap-10 items-center bg-slate-50 rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm">
           
@@ -32,15 +68,15 @@ export const About: React.FC<AboutProps> = ({ onOpenAudit }) => {
             <div className="relative rounded-2xl bg-white p-8 border border-slate-200 space-y-4 shadow-sm">
               <Quote className="w-10 h-10 text-amber-500" />
               <blockquote className="text-base sm:text-lg font-medium text-slate-800 italic leading-relaxed">
-                "A lot of agencies out there are just doing it for their own benefit, taking your retainer money and blowing it while treating client businesses like numbers. I started Cruzian because I genuinely care. I’m competitive as hell, I play to win, and I want to be the last one standing for our clients."
+                "A lot of agencies out there are just doing it for their own benefit, taking your retainer money and blowing it while treating client businesses like numbers. I started Cruzian because I genuinely care. I play to win, and I want to be the last one standing for our clients."
               </blockquote>
               <div className="pt-4 border-t border-slate-100 flex items-center gap-3">
                 <div className="w-12 h-12 rounded-xl bg-[#0B1B3D] text-amber-400 flex items-center justify-center font-black text-lg font-serif">
-                  A
+                  C
                 </div>
                 <div>
-                  <h3 className="font-bold text-[#0B1B3D]">Andy</h3>
-                  <p className="text-xs text-amber-700 font-mono font-bold">Founder & Lead Strategist</p>
+                  <h3 className="font-bold text-[#0B1B3D]">Cruzian Leadership</h3>
+                  <p className="text-xs text-amber-700 font-mono font-bold">Growth & Marketing Team</p>
                 </div>
               </div>
             </div>
@@ -63,8 +99,8 @@ export const About: React.FC<AboutProps> = ({ onOpenAudit }) => {
                 <p className="text-xs text-slate-600 mt-1">Every service is connected to measurable bottom-line revenue.</p>
               </div>
               <div className="bg-white p-4 rounded-xl border border-slate-200">
-                <h4 className="font-bold text-amber-700 text-sm">Direct Phone & WhatsApp Access</h4>
-                <p className="text-xs text-slate-600 mt-1">Direct communication via Quo business phones and open channels.</p>
+                <h4 className="font-bold text-amber-700 text-sm">Direct Phone & Dedicated Support</h4>
+                <p className="text-xs text-slate-600 mt-1">Call us toll-free at +1 888-619-3580 for immediate answers.</p>
               </div>
             </div>
           </div>
@@ -72,14 +108,14 @@ export const About: React.FC<AboutProps> = ({ onOpenAudit }) => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center bg-slate-50 border border-slate-200 rounded-3xl p-10 space-y-6">
-          <h2 className="text-3xl font-black text-[#0B1B3D]">Ready to Partner with Cruzian?</h2>
-          <p className="text-slate-600 max-w-xl mx-auto text-sm">
+        <div className="text-center bg-[#0B1B3D] text-white rounded-3xl p-10 sm:p-14 space-y-6 shadow-xl">
+          <h2 className="text-3xl sm:text-4xl font-black">Ready to Partner with Cruzian?</h2>
+          <p className="text-slate-300 max-w-xl mx-auto text-sm sm:text-base">
             Book your free 45-minute strategy call. We'll analyze your market and build a custom growth roadmap.
           </p>
           <Button
             onClick={onOpenAudit}
-            className="bg-amber-500 hover:bg-amber-600 text-[#0B1B3D] font-black px-8 py-5 rounded-xl shadow-md"
+            className="bg-amber-500 hover:bg-amber-600 text-[#0B1B3D] font-black px-8 py-6 rounded-xl text-base shadow-md"
           >
             Book a Free Strategy Call
           </Button>
