@@ -12,198 +12,72 @@ export const servicesData = [
     id: "lead-generation",
     title: "Lead Generation",
     icon: UserCheck,
-    description:
-      "We build predictable pipelines of qualified leads using targeted outreach, paid acquisition, and conversion-optimized funnels. No more hoping the phone rings.",
-    outcomes: [
-      "Consistent inbound inquiries",
-      "Qualified prospect pipelines",
-      "Lower cost per acquisition",
-    ],
+    description: "We build predictable pipelines of qualified leads using targeted outreach, paid acquisition, and conversion-optimized funnels. No more hoping the phone rings.",
+    outcomes: ["Consistent inbound inquiries", "Qualified prospect pipelines", "Lower cost per acquisition"],
   },
   {
     num: "02",
     id: "sales-systems",
     title: "Sales Systems",
     icon: Workflow,
-    description:
-      "We design and implement sales processes that convert leads into clients: CRM setup, follow-up sequences, proposal frameworks, and closing scripts.",
-    outcomes: [
-      "Higher close rates",
-      "Shorter sales cycles",
-      "Scalable revenue processes",
-    ],
+    description: "We design and implement sales processes that convert leads into clients: CRM setup, follow-up sequences, proposal frameworks, and closing scripts.",
+    outcomes: ["Higher close rates", "Shorter sales cycles", "Scalable revenue processes"],
   },
   {
     num: "03",
     id: "digital-marketing",
     title: "Digital Marketing",
     icon: Megaphone,
-    description:
-      "Full-spectrum digital marketing: email campaigns, content strategy, social media, and paid ads, all working together toward a single growth objective.",
-    outcomes: [
-      "Multi-channel presence",
-      "Compounding brand awareness",
-      "Measurable ROI",
-    ],
+    description: "Full-spectrum digital marketing: email campaigns, content strategy, social media, and paid ads, all working together toward a single growth objective.",
+    outcomes: ["Multi-channel presence", "Compounding brand awareness", "Measurable ROI"],
   },
   {
     num: "04",
     id: "brand-authority",
     title: "Brand Authority",
     icon: ShieldCheck,
-    description:
-      "We position your business as the obvious choice in your market through strategic messaging, visual identity, and thought leadership that builds lasting trust.",
-    outcomes: [
-      "Premium market positioning",
-      "Increased perceived value",
-      "Stronger client loyalty",
-    ],
+    description: "We position your business as the obvious choice in your market through strategic messaging, visual identity, and thought leadership that builds lasting trust.",
+    outcomes: ["Premium market positioning", "Increased perceived value", "Stronger client loyalty"],
   },
   {
     num: "05",
     id: "website-design",
     title: "Website Design",
     icon: LayoutTemplate,
-    description:
-      "High-converting websites built to turn visitors into leads. Every page is designed with a clear conversion goal, not just to look good.",
-    outcomes: [
-      "Higher conversion rates",
-      "Professional first impression",
-      "Mobile-optimized experience",
-    ],
+    description: "High-converting websites built to turn visitors into leads. Every page is designed with a clear conversion goal, not just to look good.",
+    outcomes: ["Higher conversion rates", "Professional first impression", "Mobile-optimized experience"],
   },
   {
     num: "06",
     id: "seo",
     title: "SEO",
     icon: Search,
-    description:
-      "Long-term organic visibility that<dyad-write path="src/components/ServicesSection.tsx" description="Complete 9 Cruzian Services component with exact numbered cards, visual icons, and zero em-dashes">
-import React from "react";
-import { UserCheck, Workflow, Megaphone, ShieldCheck, LayoutTemplate, Search, DollarSign, Share2, Compass, ArrowRight, CheckCircle2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-
-interface ServicesSectionProps {
-  onOpenAudit: () => void;
-}
-
-export const servicesData = [
-  {
-    num: "01",
-    id: "lead-generation",
-    title: "Lead Generation",
-    icon: UserCheck,
-    description:
-      "We build predictable pipelines of qualified leads using targeted outreach, paid acquisition, and conversion-optimized funnels. No more hoping the phone rings.",
-    outcomes: [
-      "Consistent inbound inquiries",
-      "Qualified prospect pipelines",
-      "Lower cost per acquisition",
-    ],
-  },
-  {
-    num: "02",
-    id: "sales-systems",
-    title: "Sales Systems",
-    icon: Workflow,
-    description:
-      "We design and implement sales processes that convert leads into clients: CRM setup, follow-up sequences, proposal frameworks, and closing scripts.",
-    outcomes: [
-      "Higher close rates",
-      "Shorter sales cycles",
-      "Scalable revenue processes",
-    ],
-  },
-  {
-    num: "03",
-    id: "digital-marketing",
-    title: "Digital Marketing",
-    icon: Megaphone,
-    description:
-      "Full-spectrum digital marketing: email campaigns, content strategy, social media, and paid ads, all working together toward a single growth objective.",
-    outcomes: [
-      "Multi-channel presence",
-      "Compounding brand awareness",
-      "Measurable ROI",
-    ],
-  },
-  {
-    num: "04",
-    id: "brand-authority",
-    title: "Brand Authority",
-    icon: ShieldCheck,
-    description:
-      "We position your business as the obvious choice in your market through strategic messaging, visual identity, and thought leadership that builds lasting trust.",
-    outcomes: [
-      "Premium market positioning",
-      "Increased perceived value",
-      "Stronger client loyalty",
-    ],
-  },
-  {
-    num: "05",
-    id: "website-design",
-    title: "Website Design",
-    icon: LayoutTemplate,
-    description:
-      "High-converting websites built to turn visitors into leads. Every page is designed with a clear conversion goal, not just to look good.",
-    outcomes: [
-      "Higher conversion rates",
-      "Professional first impression",
-      "Mobile-optimized experience",
-    ],
-  },
-  {
-    num: "06",
-    id: "seo",
-    title: "SEO",
-    icon: Search,
-    description:
-      "Long-term organic visibility that compounds over time. We build the content, technical foundation, and authority signals that put you at the top of search results.",
-    outcomes: [
-      "First-page Google rankings",
-      "Sustainable organic traffic",
-      "Reduced paid ad dependency",
-    ],
+    description: "Long-term organic visibility that compounds over time. We build the content, technical foundation, and authority signals that put you at the top of search results.",
+    outcomes: ["First-page Google rankings", "Sustainable organic traffic", "Reduced paid ad dependency"],
   },
   {
     num: "07",
     id: "paid-advertising",
     title: "Paid Advertising",
     icon: DollarSign,
-    description:
-      "Precision-targeted ad campaigns on Google, Meta, and beyond. We manage every dollar to maximize return and scale what works.",
-    outcomes: [
-      "Immediate traffic and leads",
-      "Optimized ad spend",
-      "Scalable paid growth",
-    ],
+    description: "Precision-targeted ad campaigns on Google, Meta, and beyond. We manage every dollar to maximize return and scale what works.",
+    outcomes: ["Immediate traffic and leads", "Optimized ad spend", "Scalable paid growth"],
   },
   {
     num: "08",
     id: "social-media",
     title: "Social Media Management",
     icon: Share2,
-    description:
-      "Consistent, on-brand social presence that builds community, drives engagement, and keeps your business top of mind with your ideal clients.",
-    outcomes: [
-      "Engaged audience growth",
-      "Brand consistency",
-      "Community trust",
-    ],
+    description: "Consistent, on-brand social presence that builds community, drives engagement, and keeps your business top of mind with your ideal clients.",
+    outcomes: ["Engaged audience growth", "Brand consistency", "Community trust"],
   },
   {
     num: "09",
     id: "business-consulting",
     title: "Business Consulting",
     icon: Compass,
-    description:
-      "Strategic advisory for business owners who want a clear-eyed outside perspective on growth, operations, and market positioning.",
-    outcomes: [
-      "Clarity on growth priorities",
-      "Actionable strategic roadmap",
-      "Expert accountability",
-    ],
+    description: "Strategic advisory for business owners who want a clear-eyed outside perspective on growth, operations, and market positioning.",
+    outcomes: ["Clarity on growth priorities", "Actionable strategic roadmap", "Expert accountability"],
   },
 ];
 

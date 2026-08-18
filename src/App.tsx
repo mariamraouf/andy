@@ -17,6 +17,7 @@ import { PackagesPage } from "@/pages/PackagesPage";
 import { Industries } from "@/pages/Industries";
 import { SuccessStories } from "@/pages/SuccessStories";
 import { CalculatorPage } from "@/pages/CalculatorPage";
+import { Blog } from "@/pages/Blog";
 import { Contact } from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
 
@@ -40,7 +41,7 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
           <div className="min-h-screen bg-white text-slate-900 flex flex-col font-sans selection:bg-amber-400 selection:text-slate-950">
-            {/* Header Navbar (rendered ONCE globally) */}
+            {/* Header Navbar */}
             <Navbar onOpenAudit={() => handleOpenAudit()} />
 
             {/* Route Content Pages */}
@@ -53,12 +54,13 @@ const App = () => {
                 <Route path="/industries" element={<Industries onOpenAudit={(ind) => handleOpenAudit(ind)} />} />
                 <Route path="/success-stories" element={<SuccessStories onOpenAudit={() => handleOpenAudit()} />} />
                 <Route path="/calculator" element={<CalculatorPage onOpenAudit={() => handleOpenAudit()} />} />
+                <Route path="/blog" element={<Blog onOpenAudit={() => handleOpenAudit()} />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
 
-            {/* Global Footer (rendered ONCE globally) */}
+            {/* Global Footer */}
             <Footer />
 
             <div className="bg-slate-50 border-t border-slate-200">
