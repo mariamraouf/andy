@@ -71,7 +71,7 @@ export const HeroSection: React.FC<HeroProps> = ({ onOpenAudit, onExploreSolutio
               </div>
               <div className="flex items-center gap-2">
                 <Activity className="w-4 h-4 text-amber-600 shrink-0" />
-                <span className="text-slate-700 font-semibold">< 10s SMS Response Speed</span>
+                <span className="text-slate-700 font-semibold">Sub-10s SMS Response Speed</span>
               </div>
             </div>
 
@@ -186,7 +186,7 @@ export const HeroSection: React.FC<HeroProps> = ({ onOpenAudit, onExploreSolutio
                   <div className="bg-slate-50 rounded-2xl p-4 border border-slate-200 space-y-3">
                     <div className="flex justify-between items-center text-xs">
                       <span className="text-slate-500 font-mono font-bold">MISSED-CALL CAPTURE SPEED</span>
-                      <span className="text-emerald-700 font-mono font-black">< 7.8 Seconds</span>
+                      <span className="text-emerald-700 font-mono font-black">Under 7.8 Seconds</span>
                     </div>
                     <div className="bg-white p-3 rounded-xl border border-slate-200 space-y-2 text-xs">
                       <div className="flex items-center gap-2 text-amber-700 font-mono text-[11px] font-bold">
