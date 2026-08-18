@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
+import { Logo } from "@/components/Logo";
 
 export const Footer: React.FC = () => {
   return (
@@ -10,23 +11,18 @@ export const Footer: React.FC = () => {
         {/* Main Grid */}
         <div className="grid md:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
           
-          {/* Brand & Manifesto */}
+          {/* Brand & Mission */}
           <div className="md:col-span-5 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-amber-500 text-[#0B1B3D] flex items-center justify-center font-bold text-xl font-serif">
-                C
-              </div>
-              <span className="text-2xl font-black tracking-wider text-white uppercase font-serif">
-                CRUZIAN
-              </span>
-            </div>
+            <Link to="/" className="inline-block">
+              <Logo size="lg" />
+            </Link>
 
             <p className="text-slate-300 text-sm leading-relaxed max-w-sm font-normal">
-              We help overlooked businesses become impossible to ignore. Growth strategy, digital marketing, and brand authority — built for ambitious local businesses.
+              We help overlooked businesses become impossible to ignore. Growth strategy, digital marketing, and brand authority built for ambitious local businesses.
             </p>
 
             <div className="pt-2">
-              <span className="inline-block text-amber-400 font-mono text-xs font-bold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+              <span className="inline-block text-amber-400 font-mono text-xs font-bold uppercase tracking-widest bg-amber-500/10 px-3.5 py-1 rounded-full border border-amber-500/20">
                 Growth. Authority. Results.
               </span>
             </div>
@@ -43,6 +39,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/packages" className="hover:text-amber-400 transition-colors">Packages</Link></li>
               <li><Link to="/industries" className="hover:text-amber-400 transition-colors">Industries We Serve</Link></li>
               <li><Link to="/success-stories" className="hover:text-amber-400 transition-colors">Success Stories</Link></li>
+              <li><Link to="/blog" className="hover:text-amber-400 transition-colors">Blog</Link></li>
               <li><Link to="/contact" className="hover:text-amber-400 transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -65,7 +62,7 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Contact Anchor */}
+          {/* Contact Details */}
           <div className="md:col-span-3 space-y-4">
             <h4 className="text-xs font-mono font-bold uppercase text-amber-400 tracking-wider">
               Get in Touch
@@ -81,9 +78,9 @@ export const Footer: React.FC = () => {
 
               <div className="space-y-1">
                 <span className="text-xs text-slate-400 block font-mono">Phone</span>
-                <a href="tel:9046648690" className="font-bold text-white hover:text-amber-400 flex items-center gap-2">
+                <a href="tel:18886193580" className="font-bold text-white hover:text-amber-400 flex items-center gap-2">
                   <Phone className="w-4 h-4 text-amber-400" />
-                  <span>(904) 664-8690</span>
+                  <span>+1 888-619-3580</span>
                 </a>
               </div>
 

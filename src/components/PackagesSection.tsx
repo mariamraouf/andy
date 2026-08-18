@@ -1,5 +1,5 @@
 import React from "react";
-import { Check, Sparkles, ArrowRight, Zap, ShieldCheck, Flame, Star } from "lucide-react";
+import { Check, ArrowRight, Zap, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface PackagesProps {
@@ -14,7 +14,7 @@ export const packagesData = [
     billing: "One-Time",
     description: "Perfect for businesses that need a quick jumpstart.",
     features: [
-      "Marketing & online presence audit",
+      "Marketing and online presence audit",
       "Google Business Profile optimization",
       "Basic SEO recommendations",
       "Social media profile optimization",
@@ -57,7 +57,7 @@ export const packagesData = [
       "Social media management (16 posts/month)",
       "Lead generation campaigns",
       "Basic email marketing",
-      "Conversion tracking & analytics",
+      "Conversion tracking and analytics",
       "Bi-weekly strategy calls",
       "Priority support",
     ],
@@ -75,9 +75,9 @@ export const packagesData = [
       "Complete marketing management",
       "Multi-platform advertising",
       "Advanced lead generation systems",
-      "CRM optimization & automation",
+      "CRM optimization and automation",
       "Reputation management",
-      "Sales funnel creation & optimization",
+      "Sales funnel creation and optimization",
       "Ongoing website optimization",
       "Custom reporting dashboard",
       "Weekly strategy meetings",
@@ -92,10 +92,10 @@ export const packagesData = [
 export const addOnsData = [
   { name: "Website Design / Redesign", price: "Starting at $1,500", desc: "Custom, conversion-focused responsive website." },
   { name: "Branding Package", price: "Starting at $1,000", desc: "Full visual identity, typography, guidelines, and assets." },
-  { name: "Logo Design", price: "Starting at $500", desc: "Professional high-res logo with vectors & variations." },
-  { name: "CRM Setup & Automation", price: "Starting at $750", desc: "HubSpot / GoHighLevel pipeline configuration & SMS/Email flows." },
+  { name: "Logo Design", price: "Starting at $500", desc: "Professional high-resolution logo with vectors and variations." },
+  { name: "CRM Setup and Automation", price: "Starting at $750", desc: "HubSpot or GoHighLevel pipeline configuration with SMS and email flows." },
   { name: "Custom Landing Pages", price: "Starting at $500 / page", desc: "High-converting standalone landing pages for campaigns." },
-  { name: "Professional Photography / Video", price: "Custom Quote", desc: "On-site local photo and video production if needed." },
+  { name: "Professional Photography and Video", price: "Custom Quote", desc: "On-site local photo and video production if needed." },
 ];
 
 export const PackagesSection: React.FC<PackagesProps> = ({ onOpenAudit }) => {

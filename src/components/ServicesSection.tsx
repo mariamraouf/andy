@@ -1,5 +1,5 @@
 import React from "react";
-import { UserCheck, Workflow, Megaphone, ShieldCheck, LayoutTemplate, Search, DollarSign, Share2, Compass, ArrowRight, Check } from "lucide-react";
+import { UserCheck, Workflow, Megaphone, ShieldCheck, LayoutTemplate, Search, DollarSign, Share2, Compass, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface ServicesSectionProps {
@@ -26,7 +26,7 @@ export const servicesData = [
     title: "Sales Systems",
     icon: Workflow,
     description:
-      "We design and implement sales processes that convert leads into clients — CRM setup, follow-up sequences, proposal frameworks, and closing scripts.",
+      "We design and implement sales processes that convert leads into clients: CRM setup, follow-up sequences, proposal frameworks, and closing scripts.",
     outcomes: [
       "Higher close rates",
       "Shorter sales cycles",
@@ -39,7 +39,7 @@ export const servicesData = [
     title: "Digital Marketing",
     icon: Megaphone,
     description:
-      "Full-spectrum digital marketing: email campaigns, content strategy, social media, and paid ads — all working together toward a single growth objective.",
+      "Full-spectrum digital marketing: email campaigns, content strategy, social media, and paid ads, all working together toward a single growth objective.",
     outcomes: [
       "Multi-channel presence",
       "Compounding brand awareness",
@@ -52,7 +52,7 @@ export const servicesData = [
     title: "Brand Authority",
     icon: ShieldCheck,
     description:
-      "We position your business as the obvious choice in your market — through strategic messaging, visual identity, and thought leadership that builds lasting trust.",
+      "We position your business as the obvious choice in your market through strategic messaging, visual identity, and thought leadership that builds lasting trust.",
     outcomes: [
       "Premium market positioning",
       "Increased perceived value",
@@ -65,7 +65,88 @@ export const servicesData = [
     title: "Website Design",
     icon: LayoutTemplate,
     description:
-      "High-converting websites built to turn visitors into leads. Every page is designed with a clear conversion goal — not just to look good.",
+      "High-converting websites built to turn visitors into leads. Every page is designed with a clear conversion goal, not just to look good.",
+    outcomes: [
+      "Higher conversion rates",
+      "Professional first impression",
+      "Mobile-optimized experience",
+    ],
+  },
+  {
+    num: "06",
+    id: "seo",
+    title: "SEO",
+    icon: Search,
+    description:
+      "Long-term organic visibility that<dyad-write path="src/components/ServicesSection.tsx" description="Complete 9 Cruzian Services component with exact numbered cards, visual icons, and zero em-dashes">
+import React from "react";
+import { UserCheck, Workflow, Megaphone, ShieldCheck, LayoutTemplate, Search, DollarSign, Share2, Compass, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+interface ServicesSectionProps {
+  onOpenAudit: () => void;
+}
+
+export const servicesData = [
+  {
+    num: "01",
+    id: "lead-generation",
+    title: "Lead Generation",
+    icon: UserCheck,
+    description:
+      "We build predictable pipelines of qualified leads using targeted outreach, paid acquisition, and conversion-optimized funnels. No more hoping the phone rings.",
+    outcomes: [
+      "Consistent inbound inquiries",
+      "Qualified prospect pipelines",
+      "Lower cost per acquisition",
+    ],
+  },
+  {
+    num: "02",
+    id: "sales-systems",
+    title: "Sales Systems",
+    icon: Workflow,
+    description:
+      "We design and implement sales processes that convert leads into clients: CRM setup, follow-up sequences, proposal frameworks, and closing scripts.",
+    outcomes: [
+      "Higher close rates",
+      "Shorter sales cycles",
+      "Scalable revenue processes",
+    ],
+  },
+  {
+    num: "03",
+    id: "digital-marketing",
+    title: "Digital Marketing",
+    icon: Megaphone,
+    description:
+      "Full-spectrum digital marketing: email campaigns, content strategy, social media, and paid ads, all working together toward a single growth objective.",
+    outcomes: [
+      "Multi-channel presence",
+      "Compounding brand awareness",
+      "Measurable ROI",
+    ],
+  },
+  {
+    num: "04",
+    id: "brand-authority",
+    title: "Brand Authority",
+    icon: ShieldCheck,
+    description:
+      "We position your business as the obvious choice in your market through strategic messaging, visual identity, and thought leadership that builds lasting trust.",
+    outcomes: [
+      "Premium market positioning",
+      "Increased perceived value",
+      "Stronger client loyalty",
+    ],
+  },
+  {
+    num: "05",
+    id: "website-design",
+    title: "Website Design",
+    icon: LayoutTemplate,
+    description:
+      "High-converting websites built to turn visitors into leads. Every page is designed with a clear conversion goal, not just to look good.",
     outcomes: [
       "Higher conversion rates",
       "Professional first impression",
@@ -91,7 +172,7 @@ export const servicesData = [
     title: "Paid Advertising",
     icon: DollarSign,
     description:
-      "Precision-targeted ad campaigns on Google, Meta, and beyond. We manage every dollar to maximize return and scale what's working.",
+      "Precision-targeted ad campaigns on Google, Meta, and beyond. We manage every dollar to maximize return and scale what works.",
     outcomes: [
       "Immediate traffic and leads",
       "Optimized ad spend",
@@ -140,7 +221,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenAudit })
             Every Service Built to Drive Growth
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            We don't offer a menu of disconnected tactics. Every service we provide is part of an integrated growth system designed to make your business impossible to ignore.
+            We do not offer a menu of disconnected tactics. Every service we provide is part of an integrated growth system designed to make your business impossible to ignore.
           </p>
         </div>
 
@@ -178,8 +259,8 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenAudit })
                     </p>
                     <div className="space-y-1.5">
                       {service.outcomes.map((outcome, idx) => (
-                        <div key={idx} className="flex items-start gap-2 text-xs font-medium text-slate-700">
-                          <span className="text-amber-600 font-bold">—</span>
+                        <div key={idx} className="flex items-start gap-2 text-xs font-semibold text-slate-800">
+                          <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                           <span>{outcome}</span>
                         </div>
                       ))}
