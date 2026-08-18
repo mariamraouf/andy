@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, PhoneCall, TrendingUp, Sparkles, ShieldCheck, TreePalm as PalmTree, Activity, MessageSquare, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle2, TrendingUp, Sparkles, ShieldCheck, Activity, MessageSquare, Zap } from "lucide-react";
 
 interface HeroProps {
   onOpenAudit: () => void;
