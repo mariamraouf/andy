@@ -1,63 +1,121 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { TreePalm as PalmTree } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-[#0B1B3D] text-white py-16 border-t border-slate-800">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 space-y-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 space-y-12">
         
+        {/* Main Grid */}
         <div className="grid md:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
           
-          {/* Brand Column */}
-          <div className="md:col-span-6 space-y-4">
+          {/* Brand & Manifesto */}
+          <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-amber-500 text-[#0B1B3D] flex items-center justify-center font-bold">
-                <PalmTree className="w-5 h-5 stroke-[2.2]" />
+              <div className="w-10 h-10 rounded-xl bg-amber-500 text-[#0B1B3D] flex items-center justify-center font-bold text-xl font-serif">
+                C
               </div>
               <span className="text-2xl font-black tracking-wider text-white uppercase font-serif">
                 CRUZIAN
               </span>
             </div>
 
-            <p className="text-slate-300 text-sm leading-relaxed max-w-md font-normal">
-              Rooted in St. Croix grit and relentless execution. Engineered to help doctors, contractors, and local businesses capture high-ticket buyers and win their local market.
+            <p className="text-slate-300 text-sm leading-relaxed max-w-sm font-normal">
+              We help overlooked businesses become impossible to ignore. Growth strategy, digital marketing, and brand authority — built for ambitious local businesses.
             </p>
+
+            <div className="pt-2">
+              <span className="inline-block text-amber-400 font-mono text-xs font-bold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+                Growth. Authority. Results.
+              </span>
+            </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="md:col-span-3 space-y-3">
+          {/* Company Links */}
+          <div className="md:col-span-2 space-y-3">
             <h4 className="text-xs font-mono font-bold uppercase text-amber-400 tracking-wider">
-              Navigation
+              Company
             </h4>
             <ul className="space-y-2 text-sm text-slate-300 font-medium">
+              <li><Link to="/about" className="hover:text-amber-400 transition-colors">About</Link></li>
               <li><Link to="/services" className="hover:text-amber-400 transition-colors">Services</Link></li>
-              <li><Link to="/industries" className="hover:text-amber-400 transition-colors">Industry Playbooks</Link></li>
-              <li><Link to="/calculator" className="hover:text-amber-400 transition-colors">ROI Calculator</Link></li>
-              <li><Link to="/about" className="hover:text-amber-400 transition-colors">About Andy</Link></li>
-              <li><Link to="/contact" className="hover:text-amber-400 transition-colors">Claim Growth Audit</Link></li>
+              <li><Link to="/packages" className="hover:text-amber-400 transition-colors">Packages</Link></li>
+              <li><Link to="/industries" className="hover:text-amber-400 transition-colors">Industries We Serve</Link></li>
+              <li><Link to="/success-stories" className="hover:text-amber-400 transition-colors">Success Stories</Link></li>
+              <li><Link to="/contact" className="hover:text-amber-400 transition-colors">Contact</Link></li>
+            </ul>
+          </div>
+
+          {/* All 9 Services */}
+          <div className="md:col-span-2 space-y-3">
+            <h4 className="text-xs font-mono font-bold uppercase text-amber-400 tracking-wider">
+              Services
+            </h4>
+            <ul className="space-y-1.5 text-xs text-slate-300 font-medium">
+              <li><Link to="/services#lead-generation" className="hover:text-amber-400 transition-colors">Lead Generation</Link></li>
+              <li><Link to="/services#sales-systems" className="hover:text-amber-400 transition-colors">Sales Systems</Link></li>
+              <li><Link to="/services#digital-marketing" className="hover:text-amber-400 transition-colors">Digital Marketing</Link></li>
+              <li><Link to="/services#brand-authority" className="hover:text-amber-400 transition-colors">Brand Authority</Link></li>
+              <li><Link to="/services#website-design" className="hover:text-amber-400 transition-colors">Website Design</Link></li>
+              <li><Link to="/services#seo" className="hover:text-amber-400 transition-colors">SEO</Link></li>
+              <li><Link to="/services#paid-advertising" className="hover:text-amber-400 transition-colors">Paid Advertising</Link></li>
+              <li><Link to="/services#social-media" className="hover:text-amber-400 transition-colors">Social Media Management</Link></li>
+              <li><Link to="/services#business-consulting" className="hover:text-amber-400 transition-colors">Business Consulting</Link></li>
             </ul>
           </div>
 
           {/* Contact Anchor */}
-          <div className="md:col-span-3 space-y-3">
+          <div className="md:col-span-3 space-y-4">
             <h4 className="text-xs font-mono font-bold uppercase text-amber-400 tracking-wider">
-              Direct Communication
+              Get in Touch
             </h4>
-            <p className="text-sm text-slate-300 font-medium">
-              WhatsApp & Phone Consultations directly with Andy.
-            </p>
-            <p className="text-xs text-amber-400 font-bold font-mono">
-              ST. CROIX • U.S. VIRGIN ISLANDS
-            </p>
+            <div className="space-y-3 text-sm text-slate-300">
+              <div className="space-y-1">
+                <span className="text-xs text-slate-400 block font-mono">Email</span>
+                <a href="mailto:hello@cruzian.com" className="font-bold text-white hover:text-amber-400 flex items-center gap-2">
+                  <Mail className="w-4 h-4 text-amber-400" />
+                  <span>hello@cruzian.com</span>
+                </a>
+              </div>
+
+              <div className="space-y-1">
+                <span className="text-xs text-slate-400 block font-mono">Phone</span>
+                <a href="tel:9046648690" className="font-bold text-white hover:text-amber-400 flex items-center gap-2">
+                  <Phone className="w-4 h-4 text-amber-400" />
+                  <span>(904) 664-8690</span>
+                </a>
+              </div>
+
+              <div className="space-y-1">
+                <span className="text-xs text-slate-400 block font-mono">Headquarters</span>
+                <p className="text-xs text-slate-300 flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-amber-400 shrink-0" />
+                  <span>Jacksonville, FL • Serving Clients Nationwide</span>
+                </p>
+              </div>
+
+              <div className="pt-2">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-400 hover:text-amber-300 underline underline-offset-4"
+                >
+                  <span>Book a Strategy Call</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </div>
           </div>
 
         </div>
 
         {/* Bottom Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-          <p>© {new Date().getFullYear()} The Cruzian Engine. All rights reserved.</p>
-          <p className="font-mono text-amber-400 font-bold">VIRGIN ISLANDS RESILIENCE</p>
+          <p>© 2026 Cruzian. All rights reserved.</p>
+          <div className="flex items-center gap-6">
+            <Link to="/contact" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/contact" className="hover:text-white transition-colors">Terms of Use</Link>
+          </div>
         </div>
 
       </div>

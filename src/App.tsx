@@ -13,7 +13,9 @@ import { AuditBookingModal } from "@/components/AuditBookingModal";
 import Index from "@/pages/Index";
 import { About } from "@/pages/About";
 import { Services } from "@/pages/Services";
+import { PackagesPage } from "@/pages/PackagesPage";
 import { Industries } from "@/pages/Industries";
+import { SuccessStories } from "@/pages/SuccessStories";
 import { CalculatorPage } from "@/pages/CalculatorPage";
 import { Contact } from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
@@ -22,11 +24,11 @@ const queryClient = new QueryClient();
 
 const App = () => {
   const [isAuditOpen, setIsAuditOpen] = useState(false);
-  const [selectedIndustry, setSelectedIndustry] = useState<string | undefined>(undefined);
+  const [selectedItem, setSelectedItem] = useState<string | undefined>(undefined);
 
-  const handleOpenAudit = (industry?: string) => {
-    if (industry) {
-      setSelectedIndustry(industry);
+  const handleOpenAudit = (item?: string) => {
+    if (item) {
+      setSelectedItem(item);
     }
     setIsAuditOpen(true);
   };
@@ -38,7 +40,7 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
           <div className="min-h-screen bg-white text-slate-900 flex flex-col font-sans selection:bg-amber-400 selection:text-slate-950">
-            {/* Header Navbar */}
+            {/* Header Navbar (rendered ONCE globally) */}
             <Navbar onOpenAudit={() => handleOpenAudit()} />
 
             {/* Route Content Pages */}
@@ -46,26 +48,28 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/about" element={<About onOpenAudit={() => handleOpenAudit()} />} />
-                <Route path="/services" element={<Services onOpenAudit={() => handleOpenAudit()} />} />
+                <Route path="/services" element={<Services onOpenAudit={(pkg) => handleOpenAudit(pkg)} />} />
+                <Route path="/packages" element={<PackagesPage onOpenAudit={(pkg) => handleOpenAudit(pkg)} />} />
                 <Route path="/industries" element={<Industries onOpenAudit={(ind) => handleOpenAudit(ind)} />} />
+                <Route path="/success-stories" element={<SuccessStories onOpenAudit={() => handleOpenAudit()} />} />
                 <Route path="/calculator" element={<CalculatorPage onOpenAudit={() => handleOpenAudit()} />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
 
-            {/* Global Footer */}
+            {/* Global Footer (rendered ONCE globally) */}
             <Footer />
 
             <div className="bg-slate-50 border-t border-slate-200">
               <MadeWithDyad />
             </div>
 
-            {/* Audit Booking Dialog Modal */}
+            {/* Strategy Call Booking Dialog Modal */}
             <AuditBookingModal
               isOpen={isAuditOpen}
               onClose={() => setIsAuditOpen(false)}
-              preselectedIndustry={selectedIndustry}
+              preselectedIndustry={selectedItem}
             />
           </div>
         </BrowserRouter>
